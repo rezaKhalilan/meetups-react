@@ -1,0 +1,47 @@
+form {
+  padding: 2rem 3rem;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.control {
+  padding: 1.1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.control label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.control input,
+.control textarea {
+  width: 100%;
+  border: none;
+  padding: 2%;
+  border-radius: 4px;
+  outline: none;
+}
+
+.action {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.action button {
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: 2px solid var(--yellow);
+  padding: 2% 5%;
+  border-radius: 5px;
+  background-color: var(--red);
+}
+
+.action button:hover {
+  background-color: var(--blue);
+  transition: ease-in-out 0.3s;
+}

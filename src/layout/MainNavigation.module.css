@@ -1,0 +1,108 @@
+header {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 10%;
+  background-color: var(--red);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--yellow);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  display: none;
+}
+
+a {
+  font-size: 1.4rem;
+  margin: 0 10px;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+.navLinks li:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background: inherit;
+  outline: none;
+  border: none;
+  color: aliceblue;
+}
+
+.active {
+  border-radius: 3px;
+  background-color: rgba(230, 214, 127, 0.486);
+  padding: 5px;
+}
+
+.iconInContainer {
+  display: none;
+}
+
+.badge {
+  background-color: var(--yellow);
+  color: white;
+  padding: 0 1rem;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 660px) {
+  .show {
+    position: fixed;
+    height: 100%;
+    background-color: var(--red);
+    z-index: 10;
+    transition: 1s;
+    top: 0;
+    right: 0;
+    justify-content: center;
+  }
+
+  .navLinks {
+    display: none;
+    transition: 1s;
+  }
+
+  .navLinks li a {
+    display: none;
+  }
+
+  .show li {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+  }
+
+  .iconInContainer {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    display: flex;
+  }
+}
