@@ -5,16 +5,13 @@ const NewMeetUps = () => {
   const navigate = useNavigate();
 
   const addMeetupHandler = (banana) => {
-    fetch(
-      "https://reactmeetup-38ae8-default-rtdb.firebaseio.com/meetups.json",
-      {
-        method: "POST",
-        body: JSON.stringify(banana),
-        headers: {
-          "Content-Type": "Application/json",
-        },
-      }
-    ).then(navigate("/", { replace: true }));
+    fetch("https://meetuptest-e602a-default-rtdb.firebaseio.com/meetups.json", {
+      method: "POST",
+      body: JSON.stringify(banana),
+      headers: {
+        "Content-Type": "Application/json",
+      },
+    }).then(navigate("/", { replace: true }));
   };
 
   return (

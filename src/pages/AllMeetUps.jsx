@@ -8,7 +8,7 @@ const AllMeetUps = () => {
   useEffect(() => {
     setloading(true);
 
-    fetch("https://reactmeetup-38ae8-default-rtdb.firebaseio.com/meetups.json")
+    fetch("https://meetuptest-e602a-default-rtdb.firebaseio.com/meetups.json")
       .then((response) => {
         return response.json();
       })
@@ -41,7 +41,7 @@ const AllMeetUps = () => {
 
   const deleteHandler = async (id) => {
     await fetch(
-      `https://reactmeetup-38ae8-default-rtdb.firebaseio.com/meetups/${id}.json`,
+      `https://meetuptest-e602a-default-rtdb.firebaseio.com/meetups/${id}.json`,
       {
         method: "DELETE",
       }
